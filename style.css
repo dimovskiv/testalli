@@ -78,8 +78,7 @@ body {
 
 .masthead {
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#003b55), to(#003b55));
-  background: linear-gradient(to bottom, #003b55, #003b55);
+  background: #003854;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,6 +350,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: left;
 }
 
 .message p {
@@ -375,6 +375,11 @@ body {
           align-items: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.services h1 {
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .services p {
@@ -463,8 +468,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .services .wrapper .text {
@@ -603,7 +606,11 @@ body {
 }
 
 .products {
-  padding-top: 4rem;
+  padding-top: 2rem;
+}
+
+.products h1 {
+  font-size: 20px;
 }
 
 .products h1 {
@@ -805,7 +812,7 @@ body {
   }
   .navbar .sub:last-child {
     padding: 0 !important;
-    width: 90%;
+    width: 130%;
   }
   .navbar .mobile-nav {
     display: none;
@@ -844,6 +851,7 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
     padding-left: 5rem;
+    background-color: #003b55;
   }
   .masthead .buttons {
     -webkit-box-orient: horizontal;

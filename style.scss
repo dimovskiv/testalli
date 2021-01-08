@@ -81,7 +81,7 @@ body {
 
   .masthead {
     height:100%;
-    background: linear-gradient(to bottom, $primary-blue, $primary-blue);
+    background:$primary-blue-1;
     display:flex;
     flex-direction:column;  
     position:relative;
@@ -320,6 +320,7 @@ body {
       display:flex;
       justify-content: center;
       align-items: center;
+      text-align: left;
 
 
         p {
@@ -337,6 +338,11 @@ body {
       align-items: center;
       padding-top:2rem;
       padding-bottom:2rem;
+
+      h1 {
+          padding-left:0;
+          margin-left:0;
+      }
 
       p {
           margin-bottom:1rem;
@@ -399,8 +405,7 @@ body {
       .wrapper {
           display:flex;
           flex-direction:column;
-          padding-left:1rem;
-          padding-right:1rem;
+   ;
             .text {
                 width:60%;
             }
@@ -524,7 +529,10 @@ body {
 }
 
 .products {
-    padding-top:4rem;
+    padding-top:2rem;
+    h1 {
+        font-size:20px;
+    }
     h1 {
         padding-left:2rem;
         margin-bottom:2rem;
@@ -739,7 +747,7 @@ body {
 
         .sub:last-child {
             padding:0 !important;
-            width:90%;
+            width:130%;
             
  
         }
@@ -777,6 +785,7 @@ body {
         display:flex;
         flex-direction:row;
         padding-left:5rem;
+        background-color:$primary-blue;
 
         .buttons {
            

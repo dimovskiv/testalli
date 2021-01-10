@@ -401,7 +401,6 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-top: 3rem;
   padding-bottom: 2rem;
 }
 
@@ -978,8 +977,8 @@ body {
   width: 100%;
   z-index: 300;
   position: fixed;
-  background: -webkit-gradient(linear, left bottom, left top, from(#003854), to(#005980));
-  background: linear-gradient(to top, #003854, #005980);
+  background: -webkit-gradient(linear, left bottom, left top, from(#005980), to(#003854));
+  background: linear-gradient(to top, #005980, #003854);
   display: none;
 }
 
@@ -1020,6 +1019,9 @@ body {
 }
 
 @media (min-width: 1281px) {
+  .dummy {
+    padding-left: 3rem;
+  }
   .navbar-mobile {
     display: none;
   }

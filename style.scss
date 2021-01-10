@@ -375,7 +375,7 @@ body {
       flex-direction:column;
       justify-content: flex-start;
       align-items: flex-start;
-      padding-top:3rem;
+      
       padding-bottom:2rem;
 
      
@@ -893,7 +893,7 @@ body {
     width:100%;
     z-index:300;
     position:fixed;
-    background:linear-gradient(to top, $primary-blue-1, $sec-blue);
+    background:linear-gradient(to top,$sec-blue, $primary-blue-1);
     display:none;
     
 
@@ -924,6 +924,10 @@ body {
 
 
   @media (min-width: 1281px) {
+
+  .dummy {
+      padding-left:3rem;
+  }
 
     .navbar-mobile {
         display:none;

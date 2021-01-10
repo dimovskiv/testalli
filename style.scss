@@ -47,12 +47,14 @@ body {
 
 
   
-
+    
     z-index:201;
-        height:12% !important;
+    height:100px;
       width:100%;
       position:fixed;
       top:0;
+      left:0;
+      right:0;
       display:flex;
       flex-direction:row;
       background-color:rgba(0, 59, 85, 0.9);
@@ -893,7 +895,8 @@ body {
     width:100%;
     top:0;
     position:fixed;
-
+    left:0;
+    right:0;
     background:linear-gradient(to top,$sec-blue, $primary-blue-1);
     display:none;
     

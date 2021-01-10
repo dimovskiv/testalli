@@ -22,10 +22,12 @@ body {
 
 .navbar {
   z-index: 201;
-  height: 12% !important;
+  height: 100px;
   width: 100%;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -977,6 +979,8 @@ body {
   width: 100%;
   top: 0;
   position: fixed;
+  left: 0;
+  right: 0;
   background: -webkit-gradient(linear, left bottom, left top, from(#005980), to(#003854));
   background: linear-gradient(to top, #005980, #003854);
   display: none;

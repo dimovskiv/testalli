@@ -891,8 +891,9 @@ body {
     
     height:100%;
     width:100%;
-    z-index:300;
+    top:0;
     position:fixed;
+
     background:linear-gradient(to top,$sec-blue, $primary-blue-1);
     display:none;
     

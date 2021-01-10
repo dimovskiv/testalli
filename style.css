@@ -975,7 +975,7 @@ body {
   z-index: 201 !important;
   height: 100%;
   width: 100%;
-  z-index: 300;
+  top: 0;
   position: fixed;
   background: -webkit-gradient(linear, left bottom, left top, from(#005980), to(#003854));
   background: linear-gradient(to top, #005980, #003854);

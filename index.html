@@ -13,23 +13,77 @@
 			  src="https://code.jquery.com/jquery-3.5.1.js"
 			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
 			  crossorigin="anonymous"></script>
-        <script>
-            $(document).ready(function(){
-    $(window).scroll(function(){
-        var scroll = $(window).scrollTop();
-        if (scroll > 700) {
-          $(".nav-link").css("color" , "rgb(0, 59, 85)");
-        }
-  
-        else {
-            $(".nav-link").css("color" , "white");
-        }
-    })
-  })
-        </script>
+        
+
+
   
     </head>
     <body>
+    
+    <div class="navbar-mobile">
+        <div class="content">
+            <div class="nav-link">
+                <i class="fas fa-circle"></i>
+                <a class="linky">Home</a>
+            </div>
+            <div class="nav-link">
+       
+                <a class="linky" href="services.html">Services</a>
+            </div>
+            <div class="nav-link">
+      
+                <a class="linky"  href="dna.html">DNA</a>
+            </div>
+            <div class="nav-link">
+      
+                <a class="linky" >Pulse</a>
+            </div>
+            <div class="nav-link">
+  
+                <a class="linky"  href="aboutus.html">About us</a>
+            </div>
+            <div class="nav-link">
+        
+                <a class="linky "  href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="navbar">
+        <div class="sub">
+            <div>
+                <img src="logo-alt.png">
+            </div>
+        </div>
+        <div class="sub">
+            <div class="nav-links">
+                <div class="nav-link">
+                    <a class="linky">Home</a>
+                </div>
+                <div class="nav-link">
+                    <a class="linky" href="services.html">Services</a>
+                </div>
+                <div class="nav-link">
+                    <a class="linky" href="dna.html">DNA</a>
+                </div>
+                <div class="nav-link">
+                    <a class="linky" style="opacity:0.5">Pulse</a>
+                </div>
+                <div class="nav-link">
+                    <a class="linky">About us</a>
+                </div>
+                <div class="nav-link" >
+                    <a class="linky" href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="nav-mobile" id="nm">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </div>
 
     <div class="masthead">
         <div class="sub">
@@ -42,8 +96,8 @@
                 <p>Empowering.</p>
             </div>
             <div class="buttons">
-                <a>Contact us now</a>
-                <a class="moref">More information</a>
+                <a href="contact.html">Contact us now</a>
+                <a class="moref" href="services.html">More information</a>
             </div>
         </div>
     
@@ -69,14 +123,12 @@
                  <p>We provide services to a diverse range of clients, from large corporate organizations to private business, entrepreneurs and individuals across an array of industry sectors.</p>
                  <p>We invite you to browse our site and discover what Alliancys has to offer.</p>
             </div>
-            <a class="aboutUs">About us</a>
+           
         </div>
         
     </div>
 
-    <div class="img-part">
-        <img src="bars-inverse.png">
-    </div>
+
 
 
 
@@ -164,7 +216,9 @@
         </div>
     </div>
 
- 
+    <div class="img-part lm">
+        <img src="bars-inverse.png">
+    </div>
 
     <div class="message" >
         <p  data-aos="fade-down">We are here to tell you more about ourselves, our services and how we might be able to empower your potential.</p>
@@ -179,7 +233,7 @@
     <div class="services">
         <div class="header">
             <h1  data-aos="fade-down">Services</h1>
-            <p  data-aos="fade-down">Find more about <a>All our services</a></p>
+            <p  data-aos="fade-down">Find more about <a> all our services</a></p>
         </div>
         <div class="wrapper">
             <div class="service"  data-aos="fade-down">
@@ -320,4 +374,12 @@
       </script>
       
     </body>
+
+    <script>
+        
+        $("#nm").click(function(){
+            $('.navbar-mobile').toggle( "flex" );
+        }); 
+
+        </script>
 </html>

@@ -8,7 +8,7 @@ $header-alt:50px;
 $header1:26px;
 $header-alt:rgb(11, 135, 161);
 $text:25px;
-$text-alt:16px;
+$text-alt:14px;
 $bg-alt:rgb(11, 135, 161);
 $bg-alt-1:rgb(108, 175, 166);
 $desktop-header:80px;
@@ -89,13 +89,20 @@ body {
               padding-right:2rem;
               height:100%;
               width:100%;
+    
+
+         
+
               .bar {
-                  height:0.1rem;
+                  height:0.2rem;
                   width:2rem;
                   margin:0.2rem;
                   background-color:$greenish;
                   opacity:0.8;
+                  border-radius:20%;
               }
+
+            
 
               .bar:not(:first-child):not(:last-child) {
                   width:1rem;
@@ -934,7 +941,129 @@ body {
 }
 
 
-  @media (min-width: 1281px) {
+.aboutContent1 {
+    display:flex;
+    flex-direction:column;
+    padding-left:2rem;
+    padding-right:2rem;
+    padding-top:3rem;
+
+ 
+
+    .sub {
+        .bold {
+            color:$sec-blue;
+            font-size:$text;
+        }
+        p {
+            margin-top:1rem;
+        }
+    }
+    
+}
+
+
+.aboutContent2 {
+    .bold {
+        color:$sec-blue;
+        font-size:$text;
+    }
+    display:flex;
+    flex-direction:column;
+    padding-left:2rem;
+    padding-right:2rem;
+    padding-bottom:3rem;
+    margin-top:1rem;
+
+    .sub {
+        p {
+            margin-top:1rem;
+        }
+
+        ul {
+            margin-top:2rem;
+        }
+
+        li {
+            margin:0.5rem;
+            color:$sec-blue;
+        }
+
+        li span {
+            color:black;
+        }
+
+    
+    }
+    
+}
+
+
+  @media (min-width: 992px) {
+
+    .aboutContent1 {
+        flex-direction:row;
+        background-image:url("bars-white-right.png");
+        background-repeat:repeat-y;
+        background-position: right;
+        background-attachment: fixed;
+
+        .sub:first-child {
+            width:35%;
+        }
+      
+        .sub {
+            width:50%;
+            padding:3rem;
+            display:flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+              .bold {
+            font-size:40px !important;
+            }
+
+
+            p {
+               font-size:$text-alt;
+               width:60%;
+               line-height: 1.8;
+            }
+        }
+    }
+
+    .aboutContent2 {
+        background-image:url("bars-white-right.png");
+        background-repeat:repeat-y;
+        background-position: right;
+        background-attachment: fixed;
+        flex-direction:row;
+        margin-top:0 !important;
+
+        .sub:first-child {
+            width:35%;
+        }
+
+        .sub {
+            width:50%;
+            padding:3rem;
+
+              .bold {
+            font-size:40px !important;
+            }
+
+
+            p {
+               font-size:$text-alt;
+               width:60%;
+               
+            }
+
+            p:last-child {
+                line-height: 1.8;
+            }
+        }
+    }
 
   .dummy {
       padding-left:3rem;
@@ -986,7 +1115,7 @@ body {
       
 
         z-index:201;
-            height:12% !important;
+          height:15% !important;
           width:100%;
           position:fixed;
           top:0;
@@ -1019,11 +1148,14 @@ body {
                     display:flex;
                     flex-direction:row;
                         .nav-link {
-                            margin:1.5rem;
+                            margin:1rem;
+                            display:flex;
+                            align-items: center;
                             a {
                                 color:white;
                                 opacity:0.9;
                                 transition:100ms ease-in-out;
+                                font-size:$text-alt;
                             }
     
                             a:hover {
@@ -1489,14 +1621,17 @@ body {
         .text {
             display:flex;
             flex-direction: row;
+            margin-top:0.5rem;
+            width:100%;
             p:first-child {
                 margin-left:0 !important;
             }
 
           
             p {
-                margin:1rem;
-                font-size:$header-alt!important;
+                width:auto;
+                font-size:$text !important;
+                margin:0.2rem;
             
             }
         }
@@ -1775,3 +1910,4 @@ body {
            }
         }
 }
+

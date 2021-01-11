@@ -87,11 +87,12 @@ body {
 }
 
 .navbar .sub .nav-mobile .bar {
-  height: 0.1rem;
+  height: 0.2rem;
   width: 2rem;
   margin: 0.2rem;
   background-color: #80bfb7;
   opacity: 0.8;
+  border-radius: 20%;
 }
 
 .navbar .sub .nav-mobile .bar:not(:first-child):not(:last-child) {
@@ -498,7 +499,7 @@ body {
 }
 
 .services .icon1 .text p {
-  font-size: 16px;
+  font-size: 14px;
   opacity: 0.8;
 }
 
@@ -1029,7 +1030,131 @@ body {
   margin-left: 0.7rem;
 }
 
-@media (min-width: 1281px) {
+.aboutContent1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 3rem;
+}
+
+.aboutContent1 .sub .bold {
+  color: #005980;
+  font-size: 25px;
+}
+
+.aboutContent1 .sub p {
+  margin-top: 1rem;
+}
+
+.aboutContent2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+.aboutContent2 .bold {
+  color: #005980;
+  font-size: 25px;
+}
+
+.aboutContent2 .sub p {
+  margin-top: 1rem;
+}
+
+.aboutContent2 .sub ul {
+  margin-top: 2rem;
+}
+
+.aboutContent2 .sub li {
+  margin: 0.5rem;
+  color: #005980;
+}
+
+.aboutContent2 .sub li span {
+  color: black;
+}
+
+@media (min-width: 992px) {
+  .aboutContent1 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-image: url("bars-white-right.png");
+    background-repeat: repeat-y;
+    background-position: right;
+    background-attachment: fixed;
+  }
+  .aboutContent1 .sub:first-child {
+    width: 35%;
+  }
+  .aboutContent1 .sub {
+    width: 50%;
+    padding: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .aboutContent1 .sub .bold {
+    font-size: 40px !important;
+  }
+  .aboutContent1 .sub p {
+    font-size: 14px;
+    width: 60%;
+    line-height: 1.8;
+  }
+  .aboutContent2 {
+    background-image: url("bars-white-right.png");
+    background-repeat: repeat-y;
+    background-position: right;
+    background-attachment: fixed;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 0 !important;
+  }
+  .aboutContent2 .sub:first-child {
+    width: 35%;
+  }
+  .aboutContent2 .sub {
+    width: 50%;
+    padding: 3rem;
+  }
+  .aboutContent2 .sub .bold {
+    font-size: 40px !important;
+  }
+  .aboutContent2 .sub p {
+    font-size: 14px;
+    width: 60%;
+  }
+  .aboutContent2 .sub p:last-child {
+    line-height: 1.8;
+  }
   .dummy {
     padding-left: 3rem;
   }
@@ -1073,7 +1198,7 @@ body {
   }
   .navbar {
     z-index: 201;
-    height: 12% !important;
+    height: 15% !important;
     width: 100%;
     position: fixed;
     top: 0;
@@ -1122,13 +1247,20 @@ body {
             flex-direction: row;
   }
   .navbar .sub .nav-links .nav-link {
-    margin: 1.5rem;
+    margin: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .navbar .sub .nav-links .nav-link a {
     color: white;
     opacity: 0.9;
     -webkit-transition: 100ms ease-in-out;
     transition: 100ms ease-in-out;
+    font-size: 14px;
   }
   .navbar .sub .nav-links .nav-link a:hover {
     color: #80bfb7;
@@ -1186,7 +1318,7 @@ body {
     opacity: 0.8;
     line-height: 1.8;
     margin-top: 1rem;
-    font-size: 16px;
+    font-size: 14px;
   }
   .bigger {
     font-size: 25px;
@@ -1204,7 +1336,7 @@ body {
     padding-top: 5rem;
     padding-bottom: 5rem;
     padding-left: 3rem;
-    font-size: 16px;
+    font-size: 14px;
   }
   .dna-items .sub {
     width: 70%;
@@ -1562,13 +1694,16 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-top: 0.5rem;
+    width: 100%;
   }
   .masthead .text p:first-child {
     margin-left: 0 !important;
   }
   .masthead .text p {
-    margin: 1rem;
-    font-size: 40px !important;
+    width: auto;
+    font-size: 25px !important;
+    margin: 0.2rem;
   }
   .masthead .sub:last-child {
     background-image: url("/bars-right.png");
@@ -1683,7 +1818,7 @@ body {
   .consultingBody .wrapper1 p {
     width: 60%;
     line-height: 1.9  !important;
-    font-size: 16px;
+    font-size: 14px;
   }
   .consultingBody .wrapper1 h1 {
     margin-bottom: 5rem;

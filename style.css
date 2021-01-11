@@ -1088,6 +1088,12 @@ body {
   color: black;
 }
 
+@media (min-width: 1281px) {
+  .masthead .sub .text p {
+    font-size: 25px !important;
+  }
+}
+
 @media (min-width: 992px) {
   .aboutContent1 {
     -webkit-box-orient: horizontal;
@@ -1539,8 +1545,12 @@ body {
     margin-left: 2rem;
     margin-top: 5rem;
   }
+  .services .service {
+    width: 25%;
+  }
   .services .service .icon1 p {
     margin-left: 1rem;
+    font-size: 15px !important;
   }
   .services .service .icon p {
     color: #0b87a1;
@@ -1566,7 +1576,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding-top: 6rem;
+    padding-top: 3rem;
     width: 100%;
   }
   .services .wrapper .text {
@@ -1702,7 +1712,7 @@ body {
   }
   .masthead .text p {
     width: auto;
-    font-size: 25px !important;
+    font-size: 18px !important;
     margin: 0.2rem;
   }
   .masthead .sub:last-child {

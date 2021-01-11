@@ -998,6 +998,17 @@ body {
     
 }
 
+ @media (min-width: 1281px) {
+     .masthead {
+         .sub {
+             .text {
+                 p {
+                     font-size:$text !important;
+                 }
+             }
+         }
+     }
+ }
 
   @media (min-width: 992px) {
 
@@ -1453,10 +1464,11 @@ body {
           }
 
           .service {
-          
+          width:25%;
             .icon1 {
                 p {
                     margin-left:1rem;
+                    font-size:15px !important;
                 }
 
             
@@ -1496,8 +1508,9 @@ body {
 
     
           .wrapper {
+            
               flex-direction:row;
-                padding-top:6rem;
+             padding-top:3rem;
               width:100%;
 
               .text {
@@ -1630,7 +1643,7 @@ body {
           
             p {
                 width:auto;
-                font-size:$text !important;
+                font-size:18px !important;
                 margin:0.2rem;
             
             }

@@ -7,28 +7,46 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="rellaxmain.css">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="all.js"></script>
+        <link rel="stylesheet" href="all.css">  
         <script
 			  src="https://code.jquery.com/jquery-3.5.1.js"
 			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-			  crossorigin="anonymous"></script>
+              crossorigin="anonymous"></script>
+              <script src="rellax.js"></script>
+<script>
+    var rellax = new Rellax('.rellax');
+</script>
         
-
-
+       
   
     </head>
     <body>
-    
+
+        <div onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up fa-2x"></i></div> 
+
     <div class="navbar-mobile">
         <div class="content">
             <div class="nav-link">
-                <i class="fas fa-circle"></i>
+            
                 <a class="linky">Home</a>
             </div>
             <div class="nav-link">
-       
-                <a class="linky" href="services.html">Services</a>
+                <div class="mlink">
+                    <a class="linky" href="services.html" >Services </a><span id="this"style="color:white;">+</span>
+                </div>
+                
+                <div class="menu" id="men">
+                    <div class="menuWrapper">
+                    <a href="blueprinting.html">Blueprinting</a>
+                    <a href="solutions.html">Solutions</a>
+                    <a href="consulting.html">Consulting</a>
+                    <a href="training.html">Training</a>
+                    </div>
+                </div>
             </div>
             <div class="nav-link">
       
@@ -46,6 +64,11 @@
         
                 <a class="linky "  href="contact.html">Contact</a>
             </div>
+            <div class="nav-link PK" >
+                <a class="linky" ><img src="united-kingdom.png" class="zastava"></a>
+                <a class="linky" ><img src="netherlands.png" class="zastava"></a>
+            </div>
+        
         </div>
     </div>
     
@@ -60,9 +83,16 @@
             <div class="nav-links">
                 <div class="nav-link">
                     <a class="linky">Home</a>
+                   
                 </div>
                 <div class="nav-link">
                     <a class="linky" href="services.html">Services</a>
+                    <div class="dropdown">
+                        <a href="blueprinting.html">Blueprinting</a>
+                        <a href="solutions.html">Solutions</a>
+                        <a href="consulting.html">Consulting</a>
+                        <a href="training.html">Training</a>
+                    </div>
                 </div>
                 <div class="nav-link">
                     <a class="linky" href="dna.html">DNA</a>
@@ -72,9 +102,16 @@
                 </div>
                 <div class="nav-link">
                     <a class="linky">About us</a>
+                
                 </div>
                 <div class="nav-link" >
                     <a class="linky" href="contact.html">Contact</a>
+                </div>
+                <div class="nav-link" >
+                    <a class="linky" ><img src="united-kingdom.png" class="zastava"></a>
+                </div>
+                <div class="nav-link" >
+                    <a class="linky" ><img src="netherlands.png" class="zastava"></a>
                 </div>
             </div>
             <div class="nav-mobile" id="nm">
@@ -88,7 +125,7 @@
     <div class="masthead">
         <div class="sub">
             <div class="header">
-                <h1>ALLIANCYS</h1>
+                <h1 >ALLIANCYS</h1>
                 
               
             </div>
@@ -114,7 +151,7 @@
         <img src="bars-180.png">
     </div>
 
-    <div class="welcome "  >
+    <div class="welcome " class="rellax" data-rellax-speed="-3"   >
         <h1 data-aos="fade-down" >Welcome to Alliancys</h1>
         <div class="sub">
             
@@ -236,7 +273,7 @@
     <div class="services">
         <div class="header">
             <h1  data-aos="fade-down">Services</h1>
-            <p  data-aos="fade-down">Find more about <a> all our services</a></p>
+            <p  data-aos="fade-down">Find more about <a href="services.html"> all our services</a></p>
         </div>
         <div class="wrapper">
             <div class="service"  data-aos="fade-down">
@@ -245,7 +282,7 @@
                         <img src="img/[alliancys.com][280]ICON_blueprinting.png">
                     </div>
                     <div class="text">
-                        <p>Blueprinting</p>
+                        <a href="blueprinting.html">Blueprinting</a>
                     </div>
                 
                  
@@ -267,7 +304,7 @@
                         <img src="img/[alliancys.com][47]ICON_solutions.png">
                     </div>
                     <div class="text">
-                        <p>Solutions</p>
+                        <a href="solutions.html">Solutions</a>
                     </div>
                 
                  
@@ -289,7 +326,7 @@
                         <img src="img/[alliancys.com][695]ICON_consulting-150x150.png">
                     </div>
                     <div class="text">
-                        <p>Consulting</p>
+                        <a href="consulting.html" >Consulting</a>
                     </div>
                 
                  
@@ -311,7 +348,7 @@
                         <img src="img/[alliancys.com][95]ICON_training-150x150.png">
                     </div>
                     <div class="text">
-                        <p>Training</p>
+                        <a href="training.html">Training</a>
                     </div>
                 
                  
@@ -336,10 +373,11 @@
         
             <div class="other">
                 <ul>
-                    <li>Blueprints</li>
-                    <li>Solutions</li>
-                    <li>Consulting</li>
-                    <li>Training</li>
+                    <li>Winnington House 2</li>
+                    <li>Woodberry Grove, Finchley, London, N12 0DR</li>
+                    <li>United Kingdom</li>
+                    <li>+ 31 648 070 043</li>
+                    <li>offices@alliancys.com</li>
                 </ul>
             </div>
         </div>
@@ -385,4 +423,30 @@
         }); 
 
         </script>
+
+        <script>
+            $( "#this" ).click(function() {
+                $( "#men" ).slideToggle( "slow" );
+});
+        </script>
+
+    <script>
+        mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "flex";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 
+    </script>
+
+
+
 </html>

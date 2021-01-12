@@ -64,7 +64,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: rgba(0, 59, 85, 0.9);
+  background-color: #7a0000;
 }
 
 .navbar .sub:last-child {
@@ -115,7 +115,7 @@ body {
   height: 0.2rem;
   width: 2rem;
   margin: 0.2rem;
-  background-color: #80bfb7;
+  background-color: #dca29f;
   opacity: 0.8;
   border-radius: 20%;
 }
@@ -135,7 +135,7 @@ body {
 
 .masthead {
   height: 100%;
-  background: #003854;
+  background: #7a0000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,7 +160,7 @@ body {
 .masthead .buttons a {
   margin-top: 1rem;
   margin-left: 0 !important;
-  color: #80bfb7;
+  color: #dca29f;
   border-radius: 0.5rem;
   animation: fadein 2s;
   -moz-animation: fadein 2s;
@@ -173,7 +173,7 @@ body {
 
 .masthead .buttons a:first-child {
   margin-left: 0 !important;
-  background-color: #80bfb7;
+  background-color: #dca29f;
   padding: 0.2rem 0.5rem 0.2rem 0.5rem;
   color: white;
   animation: fadein 2s;
@@ -218,7 +218,7 @@ body {
 }
 
 .masthead .sub h1 {
-  color: #80bfb7;
+  color: #dca29f;
   font-size: 56px;
   opacity: 0.8;
   animation: fadein 2s;
@@ -566,14 +566,14 @@ body {
 }
 
 .services .wrapper .service a {
-  color: #0b87a1;
+  color: #cc5f5c;
   font-size: 1.5rem;
   -webkit-transition: 100 ms ease-in-out;
   transition: 100 ms ease-in-out;
 }
 
 .services .wrapper .service a:hover {
-  color: #80bfb7;
+  color: #dca29f;
   font-size: 1.5rem;
   -webkit-transition: 100 ms ease-in-out;
   transition: 100 ms ease-in-out;
@@ -1021,8 +1021,8 @@ body {
   position: fixed;
   left: 0;
   right: 0;
-  background: -webkit-gradient(linear, left bottom, left top, from(#005980), to(#003854));
-  background: linear-gradient(to top, #005980, #003854);
+  background: -webkit-gradient(linear, left bottom, left top, from(#cc5f5c), to(#7a0000));
+  background: linear-gradient(to top, #cc5f5c, #7a0000);
   display: none;
 }
 
@@ -1103,7 +1103,6 @@ body {
 
 .navbar-mobile .content .nav-link .mlink span {
   margin-left: 0.5rem;
-  margin-top: 0.1rem;
   font-size: 1.7rem;
   opacity: 0.8;
 }
@@ -1390,7 +1389,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    background-color: #003b55;
+    background-color: #7a0000;
   }
   .navbar .sub:last-child {
     -webkit-box-pack: end;
@@ -1477,7 +1476,7 @@ body {
     font-size: 14px;
   }
   .navbar .sub .nav-links .nav-link a:hover {
-    color: #80bfb7;
+    color: #dca29f;
     cursor: pointer;
     -webkit-transition: 100ms ease-in-out;
     transition: 100ms ease-in-out;
@@ -1892,7 +1891,7 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
     padding-left: 5rem;
-    background-color: #003b55;
+    background-color: #7a0000;
   }
   .masthead .buttons {
     -webkit-box-orient: horizontal;
@@ -1924,7 +1923,7 @@ body {
     margin-top: 1rem;
   }
   .masthead .sub:last-child {
-    background-image: url("/bars-right.png");
+    background-image: url("/bars-red.png");
     background-repeat: repeat-y;
     background-position: right;
     background-attachment: fixed;
@@ -1957,8 +1956,8 @@ body {
     opacity: 0.7;
   }
   .masthead .sub h1 {
-    color: #80bfb7;
-    font-size: 80px;
+    color: #dca29f;
+    font-size: 62px;
     opacity: 0.8;
   }
   .masthead .sub .buttons {
@@ -1966,7 +1965,7 @@ body {
     font-size: 20px;
   }
   .masthead .sub .buttons a {
-    color: #80bfb7;
+    color: #dca29f;
     border-radius: 0.5rem;
     margin-left: 0.5rem !important;
     -webkit-transition: 500ms ease;
@@ -1974,16 +1973,17 @@ body {
   }
   .masthead .sub .buttons a:first-child {
     margin-left: 0 !important;
-    background-color: #80bfb7;
+    background-color: #dca29f;
     padding: 0.5rem 1rem 0.5rem 1rem;
     color: white;
     cursor: pointer;
   }
   .masthead .sub .buttons a:last-child {
     margin-left: 1.5rem !important;
+    color: #dca29f;
   }
   .masthead .sub .buttons a:hover {
-    background-color: #6cafa6;
+    background-color: #cc5f5c;
     -webkit-transition: 100ms ease;
     transition: 100ms ease;
   }
@@ -1991,7 +1991,7 @@ body {
     background-color: transparent !important;
     -webkit-transition: 100ms ease;
     transition: 100ms ease;
-    color: #6cafa6;
+    color: #cc5f5c;
     cursor: pointer;
   }
   .masthead .sub img {
@@ -2236,4 +2236,4 @@ body {
 .consultingBody .wrapper2 .sub .iconRow .text {
   margin-top: 0.5rem;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styleAcademy.css.map */

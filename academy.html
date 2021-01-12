@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styleAcademy.css">
+        <link rel="stylesheet" href="rellaxmain.css">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="all.js"></script>
+        <link rel="stylesheet" href="all.css">  
+        <script
+			  src="https://code.jquery.com/jquery-3.5.1.js"
+			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+              crossorigin="anonymous"></script>
+              <script src="rellax.js"></script>
+<script>
+    var rellax = new Rellax('.rellax');
+</script>
+        
+       
+  
+    </head>
+    <body>
+
+        <div onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up fa-2x"></i></div> 
+
+    <div class="navbar-mobile">
+        <div class="content">
+            <div class="nav-link">
+            
+                <a class="linky" href="index.html">Home</a>
+            </div>
+          
+            <div class="nav-link PK" >
+                <a class="linky" ><img src="united-kingdom.png" class="zastava"></a>
+                <a class="linky" ><img src="netherlands.png" class="zastava"></a>
+            </div>
+        
+        </div>
+    </div>
+    
+
+    <div class="navbar">
+        <div class="sub">
+            <div>
+                <img src="logo-red.png">
+            </div>
+        </div>
+        <div class="sub">
+            <div class="nav-links">
+                <div class="nav-link">
+                    <a class="linky" href="index.html">Alliancys consulting</a>
+                   
+                </div>
+                <div class="nav-link" >
+                    <a class="linky" ><img src="united-kingdom.png" class="zastava"></a>
+                </div>
+                <div class="nav-link" >
+                    <a class="linky" ><img src="netherlands.png" class="zastava"></a>
+                </div>
+            </div>
+            <div class="nav-mobile" id="nm">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="masthead">
+        <div class="sub">
+            <div class="header">
+                <h1 >ALLIANCYS NETWORK</h1>
+                
+              
+            </div>
+            <div class="text">
+                <p>Drive the change:</p>
+                <p>Inspiring.</p>
+                <p>Enabling.</p>
+                <p>Empowering.</p>
+            </div>
+            <div class="buttons">
+                <a href="contact.html">Contact us now</a>
+                <a class="moref" href="services.html">More information</a>
+            </div>
+        </div>
+    
+        <div class="sub">
+         
+        </div>
+    
+    </div>
+
+
+
+   
+        
+    <script>
+        AOS.init();
+      </script>
+      
+    </body>
+
+    <script>
+        
+        $("#nm").click(function(){
+            $('.navbar-mobile').toggle( "flex" );
+        }); 
+
+        </script>
+
+        <script>
+            $( "#this" ).click(function() {
+                $( "#men" ).slideToggle( "slow" );
+});
+        </script>
+
+    <script>
+        mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "flex";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 
+    </script>
+
+
+
+</html>

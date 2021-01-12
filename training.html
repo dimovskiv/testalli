@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="style.css">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="all.js"></script>
+        <link rel="stylesheet" href="all.css">  
         <script
 			  src="https://code.jquery.com/jquery-3.5.1.js"
 			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
@@ -31,6 +33,101 @@
     </head>
     <body>
 
+        <div onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up fa-2x"></i></div> 
+        <div class="navbar-mobile">
+            <div class="content">
+                <div class="nav-link">
+                    <div class="mlink">
+                        <a class="linky" href="services.html">Services </a><span id="this"style="color:white;">+</span>
+                    </div>
+                    <div class="menu" id="men">
+                        <div class="menuWrapper">
+                        <a href="blueprinting.html">Blueprinting</a>
+                        <a href="solutions.html">Solutions</a>
+                        <a href="consulting.html">Consulting</a>
+                        <a href="training.html">Training</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-link">
+           
+                    <a class="linky" href="services.html">Services</a>
+                </div>
+                <div class="nav-link">
+          
+                    <a class="linky"  href="dna.html">DNA</a>
+                </div>
+                <div class="nav-link">
+          
+                    <a class="linky" >Pulse</a>
+                </div>
+                <div class="nav-link">
+      
+                    <a class="linky"  href="aboutus.html">About us</a>
+                </div>
+                <div class="nav-link">
+            
+                    <a class="linky "  href="contact.html">Contact</a>
+                </div>
+                <div class="nav-link PK" >
+                    <a class="linky" ><img src="united-kingdom.png" class="zastava"></a>
+                    <a class="linky" ><img src="netherlands.png" class="zastava"></a>
+                </div>
+            </div>
+        </div>
+        
+        
+    
+        <div class="navbar">
+            <div class="sub">
+                <div>
+                    <img src="logo-alt.png">
+                </div>
+            </div>
+            <div class="sub">
+                <div class="nav-links">
+                    <div class="nav-link">
+                        <a class="linky " href="index.html">Home</a>
+                       
+                    </div>
+                    <div class="nav-link">
+                        <a class="linky" href="services.html">Services</a>
+                        <div class="dropdown">
+                            <a href="index.html">Blueprinting</a>
+                            <a href="solutions.html">Solutions</a>
+                            <a href="consulting.html">Consulting</a>
+                            <a >Training</a>
+                        </div>
+                    </div>
+                    <div class="nav-link">
+                        <a class="linky" href="dna.html">DNA</a>
+                    </div>
+                    <div class="nav-link">
+                        <a class="linky" style="opacity:0.5">Pulse</a>
+                    </div>
+                    <div class="nav-link">
+                        <a class="linky" href="aboutus.html">About us</a>
+                    
+                    </div>
+                    <div class="nav-link" >
+                        <a class="linky" href="contact.html">Contact</a>
+                    </div>
+                    <div class="nav-link" >
+                        <a class="linky" ><img src="united-kingdom.png" class="zastava"></a>
+                    </div>
+                    <div class="nav-link" >
+                        <a class="linky" ><img src="netherlands.png" class="zastava"></a>
+                    </div>
+                </div>
+                <div class="nav-mobile" id="nm">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+
+
 
 
     <div class="img-part">
@@ -41,11 +138,11 @@
         <div class="wrapper1">
             <div class="sub">
                 <h1>Alliancys Training & Certification</h1>
-               <p>Get Started</p>
+               <p class="bigger">Get Started</p>
                <p>Alliancys offers a broad range of courses and training which will teach you how to assess & audit an organization, to develop or re-use a solution blueprint and to execute the change needed to achieve the desired business vision and goals.
 
                 Take hands-on training courses to build your A2, ESF/3 or CEF expertise. Take a single course, subscribe to a year of on demand courses, or follow a step-by-step learning path. </p>
-                <p>Get Certified</p>
+                <p class="bigger">Get Certified</p>
                 <p>Getting A2, ESF/3 or CEF certified validates your product expertise and opens the door to new career opportunities. Passing an online or in-person exam proves you have the latest, most in demand skills. Increase your earning potential in a competitive global job market</p>
             </div>
             <div class="sub">
@@ -145,10 +242,11 @@
         
             <div class="other">
                 <ul>
-                    <li>Blueprints</li>
-                    <li>Solutions</li>
-                    <li>Consulting</li>
-                    <li>Training</li>
+                    <li>Winnington House 2</li>
+                    <li>Woodberry Grove, Finchley, London, N12 0DR</li>
+                    <li>United Kingdom</li>
+                    <li>+ 31 648 070 043</li>
+                    <li>offices@alliancys.com</li>
                 </ul>
             </div>
         </div>
@@ -184,6 +282,38 @@
     <script>
         AOS.init();
       </script>
+
+<script>
+        
+    $("#nm").click(function(){
+        $('.navbar-mobile').toggle( "flex" );
+    }); 
+
+    </script>
+
+<script>
+    $( "#this" ).click(function() {
+        $( "#men" ).slideToggle( "slow" );
+});
+</script>
+
+<script>
+    mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+mybutton.style.display = "flex";
+} else {
+mybutton.style.display = "none";
+}
+}
+
+function topFunction() {
+document.body.scrollTop = 0; // For Safari
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 
+</script>
+    
       
     </body>
 </html>

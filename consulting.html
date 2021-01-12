@@ -30,6 +30,100 @@
   
     </head>
     <body>
+        <div onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up fa-2x"></i></div> 
+        <div class="navbar-mobile">
+            <div class="content">
+                <div class="nav-link">
+                    <a class="linky">Home</a>
+                </div>
+                <div class="nav-link">
+           
+                    <div class="mlink">
+                        <a class="linky" href="services.html">Services </a><span id="this"style="color:white;">+</span>
+                    </div>
+                    <div class="menu" id="men">
+                        <div class="menuWrapper">
+                        <a href="blueprinting.html">Blueprinting</a>
+                        <a href="solutions.html">Solutions</a>
+                        <a href="consulting.html">Consulting</a>
+                        <a href="training.html">Training</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-link">
+          
+                    <a class="linky"  href="dna.html">DNA</a>
+                </div>
+                <div class="nav-link">
+          
+                    <a class="linky" >Pulse</a>
+                </div>
+                <div class="nav-link">
+      
+                    <a class="linky"  href="aboutus.html">About us</a>
+                </div>
+                <div class="nav-link">
+            
+                    <a class="linky "  href="contact.html">Contact</a>
+                </div>
+                <div class="nav-link PK" >
+                    <a class="linky" ><img src="united-kingdom.png" class="zastava"></a>
+                    <a class="linky" ><img src="netherlands.png" class="zastava"></a>
+                </div>
+            </div>
+        </div>
+        
+        
+    
+        <div class="navbar">
+            <div class="sub">
+                <div>
+                    <img src="logo-alt.png">
+                </div>
+            </div>
+            <div class="sub">
+                <div class="nav-links">
+                    <div class="nav-link">
+                        <a class="linky " href="index.html">Home</a>
+                       
+                    </div>
+                    <div class="nav-link">
+                        <a class="linky" href="services.html">Services</a>
+                        <div class="dropdown">
+                            <a href="blueprinting.html">Blueprinting</a>
+                            <a href="solutions.html">Solutions</a>
+                            <a>Consulting</a>
+                            <a href="training.html">Training</a>
+                        </div>
+                    </div>
+                    <div class="nav-link">
+                        <a class="linky" href="dna.html">DNA</a>
+                    </div>
+                    <div class="nav-link">
+                        <a class="linky" style="opacity:0.5">Pulse</a>
+                    </div>
+                    <div class="nav-link">
+                        <a class="linky" href="aboutus.html">About us</a>
+                    
+                    </div>
+                    <div class="nav-link" >
+                        <a class="linky" href="contact.html">Contact</a>
+                    </div>
+                    <div class="nav-link" >
+                        <a class="linky" ><img src="united-kingdom.png" class="zastava"></a>
+                    </div>
+                    <div class="nav-link" >
+                        <a class="linky" ><img src="netherlands.png" class="zastava"></a>
+                    </div>
+                </div>
+                <div class="nav-mobile" id="nm">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+
 
 
     <div class="img-part">
@@ -260,10 +354,40 @@
         <p> © 2021 - Alliancys        </p>
     </div>
 
+    <script>
+        
+        $("#nm").click(function(){
+            $('.navbar-mobile').toggle( "flex" );
+        }); 
+
+        </script>
+
+<script>
+    $( "#this" ).click(function() {
+        $( "#men" ).slideToggle( "slow" );
+});
+</script>
         
     <script>
         AOS.init();
       </script>
+
+<script>
+    mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+mybutton.style.display = "flex";
+} else {
+mybutton.style.display = "none";
+}
+}
+
+function topFunction() {
+document.body.scrollTop = 0; // For Safari
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 
+</script>
       
     </body>
 </html>

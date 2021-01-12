@@ -32,9 +32,9 @@ body {
   width: 50px;
   height: 50px;
   position: fixed;
-  bottom: 1%;
+  bottom: 2%;
   z-index: 999;
-  right: 1%;
+  right: 2%;
   border-radius: 50%;
   background: -webkit-gradient(linear, right top, left top, from(#0b87a1), to(#80bfb7));
   background: linear-gradient(to left, #0b87a1, #80bfb7);

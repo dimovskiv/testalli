@@ -20,15 +20,10 @@ body, html {
 }
 
 body {
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
 }
 
-@font-face {
-  font-family: Poppins;
-  src: url(/Poppins-Regular.ttf);
-}
-
-#myBtn {
+.back-to-top-btn {
   width: 50px;
   height: 50px;
   position: fixed;
@@ -1192,6 +1187,16 @@ body {
   padding-right: 2rem;
 }
 
+.servicesContact .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .servicesContact .sub {
   width: 100%;
   display: -webkit-box;
@@ -1229,7 +1234,48 @@ body {
 }
 
 @media (min-width: 992px) {
+  .termsAndConditions {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-image: url("bars-white-right.png");
+    background-repeat: repeat-y;
+    background-position: right;
+    background-attachment: fixed;
+  }
+  .termsAndConditions .wrapper {
+    width: 70%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 5rem !important;
+    padding-top: 7rem;
+  }
+  .termsAndConditions .wrapper .sub {
+    margin: 1rem 0;
+  }
+  .termsAndConditions .wrapper .sub p {
+    margin: 1rem 0;
+    line-height: 1.8;
+    opacity: 0.8;
+  }
+  .cookieBanner .wrapper p {
+    text-align: center;
+  }
   .servicesContact {
+    width: 100wh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1237,17 +1283,29 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 100%;
-    padding-left: 5rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    background-image: url(/bars-white-right.png);
+    height: auto;
+    background: url("bars-white-right.png");
     background-position: right;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+  .servicesContact .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 70%;
+    padding-top: 5rem;
+    padding-left: 2rem;
+  }
   .servicesContact .sub {
-    width: 15%;
+    width: 25%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2235,5 +2293,137 @@ body {
 
 .consultingBody .wrapper2 .sub .iconRow .text {
   margin-top: 0.5rem;
+}
+
+/**
+  * BLOG
+  */
+.blog__content {
+  padding-top: 500px;
+}
+
+.blog__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* Scroll position indicator bar */
+.scroll-position {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: grey;
+  z-index: 999;
+}
+
+.scroll-position__bar {
+  height: 4px;
+  width: 0;
+  background: #80bfb7;
+  -webkit-box-shadow: 0 0 4px 1px #80bfb7;
+          box-shadow: 0 0 4px 1px #80bfb7;
+}
+
+.cookieBanner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(#80bfb7), to(#0b87a1));
+  background: linear-gradient(to left, #80bfb7, #0b87a1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cookieBanner .wrapper {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 2rem 1rem 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cookieBanner .wrapper p:last-child {
+  margin-top: 1em;
+  text-decoration: underline;
+}
+
+.cookieBanner .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.cookieBanner p {
+  color: white;
+  opacity: 0.8;
+  text-align: center;
+  font-size: 11px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.showCookie {
+  visibility: none;
+}
+
+.termsAndConditions {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.termsAndConditions .wrapper {
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 5rem;
+}
+
+.termsAndConditions .wrapper .sub {
+  margin: 0.5rem 0;
+}
+
+.termsAndConditions .wrapper .sub p {
+  margin: 0.5rem 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,10 +1,15 @@
+<?php require_once("couch/cms.php"); ?>
+
+<cms:template title="Blog" clonable="1">
+  <cms:editable name="blog_content" type="richtext"/>
+  <cms:editable name="blog_image" type="image" crop="1" height="360" width="480"/>
+</cms:template>
+
 <!DOCTYPE html>
 <html lang="en">
 
   <head>
-    <title>Contact | Alliancys</title>
-    <link rel="shortcut icon" type="image/jpg" href="favicon.png">
-    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <title><cms:show k_page_title/> | Alliancys</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
@@ -44,13 +49,13 @@
           <a class="linky" href="dna.html">DNA</a>
         </div>
         <div class="nav-link">
-          <a class="linky" href="#">Pulse</a>
+          <a class="linky" href="pulse.php">Pulse</a>
         </div>
         <div class="nav-link">
-          <a class="linky" href="aboutus.html">About us</a>
+          <a class="linky" href="aboutus.php">About us</a>
         </div>
         <div class="nav-link">
-          <a class="linky">Contact</a>
+          <a class="linky" href="contact.html">Contact</a>
         </div>
         <div class="nav-link PK">
           <a class="linky"><img src="united-kingdom.png" class="zastava"></a>
@@ -83,13 +88,13 @@
             <a class="linky" href="dna.html">DNA</a>
           </div>
           <div class="nav-link">
-            <a class="linky" style="opacity:0.5" href="pulse.php">Pulse</a>
+            <a class="linky" style="opacity:0.5">Pulse</a>
           </div>
           <div class="nav-link">
-            <a class="linky" href="aboutus.html">About us</a>
+            <a class="linky">About us</a>
           </div>
           <div class="nav-link">
-            <a class="linky">Contact</a>
+            <a class="linky" href="contact.html">Contact</a>
           </div>
           <div class="nav-link">
             <a class="linky"><img src="united-kingdom.png" class="zastava"></a>
@@ -110,93 +115,21 @@
       <div class="scroll-position__bar" id="scrollPositionBar"></div>
     </div>
 
-    <div class="contact">
-      <div class="sub">
-        <h1>Contact us today</h1>
-        <p>
-          ALLIANCYS acts as a virtualized organization. We are where our
-          clients want us to be. To meet and work with our clients we
-          utilize the global Regis Office Network
-        </p>
-      </div>
-      <img src="bars-rot.png" class="desktopNone">
+    <div class="blog__content">
+      <img class="thumb" src="<cms:show blog_image/>" alt="Blog Image">
+      <cms:show blog_content/>
+      <a href="pulse.php">Back to blog</a>
     </div>
-
-    <div class="contact-form">
-      <div class="form-wrapper" data-aos="fade-down">
-        <input type="text" placeholder="Name *" name="name" id="email" required>
-        <input type="text" placeholder="E-mail *" name="email" id="email" required>
-        <input type="text" placeholder="Subject *" name="email" id="email" required> 
-        <textarea  name="comment" form="usrform">Message *</textarea>
-      </div>
-    </div>
-
-    <div class="img-part">
-      <img src="bars-180.png">
-    </div>
-
-    <div class="servicesContact">
-      <div class="wrapper">
-        <div class="sub" data-aos="fade-down">
-          <div class="header">
-            <i class="far fa-envelope fa-2x"></i>
-            <p>E-mail</p>
-          </div>
-          <div class="text">
-            <a>Offices@alliancys.com</a>
-          </div>
-        </div>
-        <div class="sub" data-aos="fade-down">
-          <div class="header">
-            <i class="fas fa-phone fa-2x"></i>
-            <p>Phone number</p>
-          </div>
-          <div class="text">
-            <p>+ 31 648 070 043</p>
-          </div>
-        </div>
-        <div class="sub" data-aos="fade-down">
-          <div class="header">
-            <i class="fas fa-globe fa-2x"></i>
-            <p>Global conference</p>
-          </div>
-          <div class="text">
-            <p>+1 213 603 9096</p>
-            <p>PIN:75416239</p>
-          </div>
-        </div>
-        <div class="sub" data-aos="fade-down">
-          <div class="header">
-            <i class="fas fa-building fa-2x"></i>
-            <p>ALLIANCYS Statutory Office</p>
-          </div>
-          <div class="text">
-            <p>Winnington House 2</p>
-            <p>Woodberry Grove Finchley London</p>
-            <p>N12 0DR</p>
-            <p>United Kingdom</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
 
     <div class="footer">
       <div class="sub">
         <p>Contact</p>
         <div class="other">
           <ul>
-            <li>Winnington House 2</li>
-            <li>Woodberry Grove, Finchley, London,
-
-              N12 0DR</li>
-            <li>United Kingdom</li>
-            <li>
-
-              + 31 648 070 043
-              
-              offices@alliancys.com
-              </li>
+            <li>Blueprints</li>
+            <li>Solutions</li>
+            <li>Consulting</li>
+            <li>Training</li>
           </ul>
         </div>
       </div>
@@ -204,10 +137,10 @@
         <p>Services</p>
         <div class="other">
           <ul>
-            <li onclick="window.open('blueprinting.html')">Blueprints</li>
-            <li onclick="window.open('solutions.html')">Solutions</li>
-            <li onclick="window.open('consulting.html')">Consulting</li>
-            <li onclick="window.open('training.html')">Training</li>
+            <li>Blueprints</li>
+            <li>Solutions</li>
+            <li>Consulting</li>
+            <li>Training</li>
           </ul>
         </div>
       </div>
@@ -215,10 +148,10 @@
         <p>Legal</p>
         <div class="other">
           <ul>
-            <li onclick="window.open('termsAndConditions.html')">Terms and conditions</li>
-            <li onclick="window.open('cookieStatement.html')">Cookie Statement</li>
-            <li onclick="window.open('Disclaimer.html')">Disclaimer</li>
-            <li onclick="window.open('Privacy.html')">Privacy</li>
+            <li>Terms and conditions</li>
+            <li>Cookie Statement</li>
+            <li>Disclaimer</li>
+            <li>Privacy</li>
           </ul>
         </div>
       </div>
@@ -234,3 +167,5 @@
   </body>
 
 </html>
+
+<?php COUCH::invoke(); ?>

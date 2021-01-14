@@ -8,6 +8,7 @@ a {
 
 body {
   position: relative;
+  overflow: hidden;
 }
 
 * {
@@ -220,6 +221,7 @@ body {
 .masthead .sub h1 {
   color: #bad085;
   font-size: 56px;
+  line-height: 1.2;
   opacity: 0.8;
   animation: fadein 2s;
   -moz-animation: fadein 2s;
@@ -1923,7 +1925,7 @@ body {
     margin-top: 1rem;
   }
   .masthead .sub:last-child {
-    background-image: url("/bars-green.png");
+    background-image: url("/bars-green-right.png");
     background-repeat: repeat-y;
     background-position: right;
     background-attachment: fixed;

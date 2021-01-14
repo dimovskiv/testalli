@@ -1,393 +1,318 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script
-			  src="https://code.jquery.com/jquery-3.5.1.js"
-			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-			  crossorigin="anonymous"></script>
-        <script>
-            $(document).ready(function(){
-    $(window).scroll(function(){
-        var scroll = $(window).scrollTop();
-        if (scroll > 700) {
-          $(".nav-link").css("color" , "rgb(0, 59, 85)");
-        }
-  
-        else {
-            $(".nav-link").css("color" , "white");
-        }
-    })
-  })
-        </script>
-  
-    </head>
-    <body>
-      
-        <div class="navbar-mobile">
-            <div class="content">
-                <div class="nav-link">
-                    <a class="linky">Home</a>
-                </div>
-                <div class="nav-link">
-           
-                    <div class="mlink">
-                        <a class="linky" href="services.html">Services </a><span id="this"style="color:white;">+</span>
-                    </div>
-                    <div class="menu" id="men">
-                        <div class="menuWrapper">
-                        <a href="blueprinting.html">Blueprinting</a>
-                        <a href="solutions.html">Solutions</a>
-                        <a href="consulting.html">Consulting</a>
-                        <a href="training.html">Training</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="nav-link">
-          
-                    <a class="linky"  href="dna.html">DNA</a>
-                </div>
-                <div class="nav-link">
-          
-                    <a class="linky" >Pulse</a>
-                </div>
-                <div class="nav-link">
-      
-                    <a class="linky"  href="aboutus.html">About us</a>
-                </div>
-                <div class="nav-link">
-            
-                    <a class="linky "  href="contact.html">Contact</a>
-                </div>
-                <div class="nav-link PK" >
-                    <a class="linky" ><img src="united-kingdom.png" class="zastava"></a>
-                    <a class="linky" ><img src="netherlands.png" class="zastava"></a>
-                </div>
-            </div>
-        </div>
-        
-        
-    
-        <div class="navbar">
-            <div class="sub">
-                <div>
-                    <img src="logo-alt.png">
-                </div>
-            </div>
-            <div class="sub">
-                <div class="nav-links">
-                    <div class="nav-link">
-                        <a class="linky " href="index.html">Home</a>
-                       
-                    </div>
-                    <div class="nav-link">
-                        <a class="linky" href="services.html">Services</a>
-                        <div class="dropdown">
-                            <a href="blueprinting.html">Blueprinting</a>
-                            <a href="solutions.html">Solutions</a>
-                            <a>Consulting</a>
-                            <a href="training.html">Training</a>
-                        </div>
-                    </div>
-                    <div class="nav-link">
-                        <a class="linky" href="dna.html">DNA</a>
-                    </div>
-                    <div class="nav-link">
-                        <a class="linky" style="opacity:0.5">Pulse</a>
-                    </div>
-                    <div class="nav-link">
-                        <a class="linky" href="aboutus.html">About us</a>
-                    
-                    </div>
-                    <div class="nav-link" >
-                        <a class="linky" href="contact.html">Contact</a>
-                    </div>
-                    <div class="nav-link" >
-                        <a class="linky" ><img src="united-kingdom.png" class="zastava"></a>
-                    </div>
-                    <div class="nav-link" >
-                        <a class="linky" ><img src="netherlands.png" class="zastava"></a>
-                    </div>
-                </div>
-                <div class="nav-mobile" id="nm">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-            </div>
-        </div>
+<html lang="en">
 
+  <head>
+    <title>Consulting | Alliancys</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.png">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7aa0d05815.js" crossorigin="anonymous"></script>
+  </head>
 
+  <body>
+    <div class="back-to-top-btn" id="backToTopBtn" title="Back to top">
+      <i class="fas fa-angle-up fa-2x"></i>
+    </div>
+
+    <div class="navbar-mobile">
+      <div class="content">
+        <div class="nav-link">
+          <a class="linky" href="index.html">Home</a>
+        </div>
+        <div class="nav-link">
+          <div class="mlink">
+            <a class="linky" href="services.html">Services</a>
+            <span id="this" style="color: white;">+</span>
+          </div>
+          <div class="menu" id="men">
+            <div class="menuWrapper">
+              <a href="blueprinting.html">Blueprinting</a>
+              <a href="solutions.html">Solutions</a>
+              <a>Consulting</a>
+              <a href="training.html">Training</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-link">
+          <a class="linky" href="dna.html">DNA</a>
+        </div>
+        <div class="nav-link">
+          <a class="linky" href="#">Pulse</a>
+        </div>
+        <div class="nav-link">
+          <a class="linky" href="aboutus.html">About us</a>
+        </div>
+        <div class="nav-link">
+          <a class="linky" href="contact.html">Contact</a>
+        </div>
+        <div class="nav-link PK">
+          <a class="linky"><img src="united-kingdom.png" class="zastava"></a>
+          <a class="linky"><img src="netherlands.png" class="zastava"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <div class="sub">
+        <div>
+          <img src="logo-alt.png">
+        </div>
+      </div>
+      <div class="sub">
+        <div class="nav-links">
+          <div class="nav-link">
+            <a class="linky" href="index.html">Home</a>
+          </div>
+          <div class="nav-link">
+            <a class="linky"href="services.html" >Services</a>
+            <div class="dropdown">
+              <a href="blueprinting.html">Blueprinting</a>
+              <a href="solutions.html">Solutions</a>
+              <a>Consulting</a>
+              <a href="training.html">Training</a>
+            </div>
+          </div>
+          <div class="nav-link">
+            <a class="linky" href="dna.html">DNA</a>
+          </div>
+          <div class="nav-link">
+            <a class="linky" style="opacity:0.5" href="pulse.php">Pulse</a>
+          </div>
+          <div class="nav-link">
+            <a class="linky" href="aboutus.html">About us</a>
+          </div>
+          <div class="nav-link">
+            <a class="linky" href="contact.html">Contact</a>
+          </div>
+          <div class="nav-link">
+            <a class="linky"><img src="united-kingdom.png" class="zastava"></a>
+          </div>
+          <div class="nav-link">
+            <a class="linky"><img src="netherlands.png" class="zastava"></a>
+          </div>
+        </div>
+        <div class="nav-mobile" id="nm">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-position">
+      <div class="scroll-position__bar" id="scrollPositionBar"></div>
+    </div>
 
     <div class="img-part">
-        <img src="bars-180.png">
+      <img src="bars-180.png">
     </div>
 
     <div class="consultingBody">
-        <div class="wrapper1">
-            <div class="sub  data-aos="fade-down">
-                <h1>Alliancys Consulting</h1>
-                <p>As the world’s only ESF/3- Consulting Network, Alliancys helps a diverse range of clients with a diverse range of needs. This is especially true of our Consulting Practice, which provides business innovation and consulting services to clients navigating an exceptional range of challenges, changes, and opportunities.
-
-                    Our professionals are drawn from a variety of multidisciplinary backgrounds, allowing us to deliver insightful, innovation solutions – no matter the challenge, no matter the need.</p>
-            </div>
-            <div class="sub">
-                
-            </div>
+      <div class="wrapper1">
+        <div class="sub data-aos="fade-down">
+          <h1>Alliancys Consulting</h1>
+          <p>
+            As the world’s only ESF/3- Consulting Network, Alliancys helps a
+            diverse range of clients with a diverse range of needs. This is
+            especially true of our Consulting Practice, which provides business
+            innovation and consulting services to clients navigating an
+            exceptional range of challenges, changes, and opportunities. Our
+            professionals are drawn from a variety of multidisciplinary
+            backgrounds, allowing us to deliver insightful, innovation solutions
+            – no matter the challenge, no matter the need.
+          </p>
         </div>
-        <div class="wrapper2">
-            <div class="sub"  data-aos="fade-down">
-                <p class="bigger">Change-, Risk- & Quality Management</p>
-                <div class="iconRow">
-                    <div class="icon">
-
-                    </div>
-                    <div class="text">
-                        <p>Setup of Change Management structures and processes</p>
-                    </div>
-                </div>
-                <div class="iconRow">
-                    <div class="icon">
-
-                    </div>
-                    <div class="text">
-                        <p>Implementation of Risk Management Controls & Dashboards</p>
-                    </div>
-                </div>
-                <div class="iconRow">
-                    <div class="icon">
-
-                    </div>
-                    <div class="text">
-                        <p>Implementation of Quality Standards (e.g. ISO)</p>
-                    </div>
-                </div>
+        <div class="sub"></div>
+      </div>
+      <div class="wrapper2">
+        <div class="sub" data-aos="fade-down">
+          <p class="bigger">Change-, Risk- & Quality Management</p>
+          <div class="iconRow">
+            <div class="icon"></div>
+            <div class="text">
+              <p>Setup of Change Management structures and processes</p>
             </div>
-            <div class="sub"  data-aos="fade-down">
-                <p class="bigger">Managment consulting</p>
-                <div class="iconRow">
-                    <div class="icon">
-
-                    </div>
-                    <div class="text">
-                       <p>Management Support (Visioning, Strategy, Execution & Validation)</p> 
-                    </div>
-                </div>
-                <div class="iconRow">
-                    <div class="icon">
-
-                    </div>
-                    <div class="text">
-                        <p>Organizational Change Support</p>
-                    </div>
-                </div>
-                <div class="iconRow">
-                    <div class="icon">
-
-                    </div>
-                    <div class="text">
-                        <p>Business Transformation/Process Optimization</p>
-                    </div>
-                </div>
+          </div>
+          <div class="iconRow">
+            <div class="icon"></div>
+            <div class="text">
+              <p>Implementation of Risk Management Controls & Dashboards</p>
             </div>
-            <div class="sub"  data-aos="fade-down">
-                <p class="bigger">Enterprise Architecture Support</p>
-                <div class="iconRow">
-                    <div class="icon">
-
-                    </div>
-                    <div class="text">
-                       <p>Setting up and implementing EA structures and Governance</p>
-                    </div>
-                </div>
-                <div class="iconRow">
-                    <div class="icon">
-
-                    </div>
-                    <div class="text">
-                        <p>Executing (temporary) EA Governance</p>
-                    </div>
-                </div>
-                <div class="iconRow">
-                    <div class="icon">
-
-                    </div>
-                    <div class="text">
-                        <p>Develop custom EA (Business and IT) Models</p>
-                    </div>
-                </div>
+          </div>
+          <div class="iconRow">
+            <div class="icon"></div>
+            <div class="text">
+              <p>Implementation of Quality Standards (e.g. ISO)</p>
             </div>
-            <div class="sub"  data-aos="fade-down">
-                <p class="bigger">Information Management</p>
-                <div class="iconRow">
-                    <div class="icon">
-
-                    </div>
-                    <div class="text">
-                        <p>IT Landscape Optimization (Visioning, Strategy, Planning & Change Execution)</p>
-                    </div>
-                </div>
-                <div class="iconRow">
-                    <div class="icon">
-
-                    </div>
-                    <div class="text">
-                        <p>Application Landscape Rationalization (Application Lifecycle Management)</p>
-                    </div>
-                </div>
-                <div class="iconRow">
-                    <div class="icon">
-
-                    </div>
-                    <div class="text">
-                        <p>IT Asset Management</p>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="sub" data-aos="fade-down">
+          <p class="bigger">Managment consulting</p>
+          <div class="iconRow">
+            <div class="icon"></div>
+            <div class="text">
+              <p>Management Support (Visioning, Strategy, Execution & Validation)</p>
             </div>
-            <div class="sub"  data-aos="fade-down">
-                <p class="bigger">Information Technology</p>
-                <div class="iconRow">
-                    <div class="icon">
-
-                    </div>
-                    <div class="text">
-                        <p>Business Analysis and Requirements Management</p>
-                    </div>
-                </div>
-                <div class="iconRow">
-                    <div class="icon">
-
-                    </div>
-                    <div class="text">
-                        <p>CIO Office Support (IM Vision & Strategy Development, CIO Execution)</p>
-                    </div>
-                </div>
-                <div class="iconRow">
-                    <div class="icon">
-
-                    </div>
-                    <div class="text">
-                        <p>Architectural Solution Blueprinting and Referencing</p>
-                    </div>
-                </div>
+          </div>
+          <div class="iconRow">
+            <div class="icon"></div>
+            <div class="text">
+              <p>Organizational Change Support</p>
             </div>
-            <div class="sub"  data-aos="fade-down">
-                <p class="bigger">Program & Project Management</p>
-                <div class="iconRow">
-                    <div class="icon">
-
-                    </div>
-                    <div class="text">
-                        <p>P&P Coaching</p>
-                    </div>
-                </div>
-                <div class="iconRow">
-                    <div class="icon">
-
-                    </div>
-                    <div class="text">
-                        <p>P&P Framework implementation & Guidance</p>
-                    </div>
-                </div>
-                </div>
-                
-                <div class="sub"  data-aos="fade-down">
-                    <p class="bigger">Business Process Innovation</p>
-                    <div class="iconRow">
-                        <div class="icon">
-                           
-                        </div>
-                        <div class="text">
-                            <p>Voorbeeld 1</p>
-                        </div>
-                    </div>
-                </div>
-  
+          </div>
+          <div class="iconRow">
+            <div class="icon"></div>
+            <div class="text">
+              <p>Business Transformation/Process Optimization</p>
+            </div>
+          </div>
+        </div>
+        <div class="sub" data-aos="fade-down">
+          <p class="bigger">Enterprise Architecture Support</p>
+          <div class="iconRow">
+            <div class="icon"></div>
+            <div class="text">
+              <p>Setting up and implementing EA structures and Governance</p>
+            </div>
+          </div>
+          <div class="iconRow">
+            <div class="icon"></div>
+            <div class="text">
+              <p>Executing (temporary) EA Governance</p>
+            </div>
+          </div>
+          <div class="iconRow">
+            <div class="icon"></div>
+            <div class="text">
+              <p>Develop custom EA (Business and IT) Models</p>
+            </div>
+          </div>
+        </div>
+        <div class="sub" data-aos="fade-down">
+          <p class="bigger">Information Management</p>
+          <div class="iconRow">
+            <div class="icon"></div>
+            <div class="text">
+              <p>IT Landscape Optimization (Visioning, Strategy, Planning & Change Execution)</p>
+            </div>
+          </div>
+          <div class="iconRow">
+            <div class="icon"></div>
+            <div class="text">
+              <p>Application Landscape Rationalization (Application Lifecycle Management)</p>
+            </div>
+          </div>
+          <div class="iconRow">
+            <div class="icon"></div>
+            <div class="text">
+              <p>IT Asset Management</p>
+            </div>
+          </div>
+        </div>
+        <div class="sub" data-aos="fade-down">
+          <p class="bigger">Information Technology</p>
+          <div class="iconRow">
+            <div class="icon"></div>
+            <div class="text">
+              <p>Business Analysis and Requirements Management</p>
+            </div>
+          </div>
+          <div class="iconRow">
+            <div class="icon"></div>
+            <div class="text">
+              <p>CIO Office Support (IM Vision & Strategy Development, CIO Execution)</p>
+            </div>
+          </div>
+          <div class="iconRow">
+            <div class="icon"></div>
+            <div class="text">
+              <p>Architectural Solution Blueprinting and Referencing</p>
+            </div>
+          </div>
+        </div>
+        <div class="sub" data-aos="fade-down">
+          <p class="bigger">Program & Project Management</p>
+          <div class="iconRow">
+            <div class="icon"></div>
+            <div class="text">
+              <p>P&P Coaching</p>
+            </div>
+          </div>
+          <div class="iconRow">
+            <div class="icon"></div>
+            <div class="text">
+              <p>P&P Framework implementation & Guidance</p>
+            </div>
+          </div>
+        </div>
+        <div class="sub" data-aos="fade-down">
+          <p class="bigger">Business Process Innovation</p>
+          <div class="iconRow">
+            <div class="icon"></div>
+            <div class="text">
+              <p>Voorbeeld 1</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-
     <div class="footer">
-        <div class="sub">
-            <p>Contact</p>
-        
-            <div class="other">
-                <ul>
-                    <li>Blueprints</li>
-                    <li>Solutions</li>
-                    <li>Consulting</li>
-                    <li>Training</li>
-                </ul>
-            </div>
+      <div class="sub">
+        <p>Contact</p>
+        <div class="other">
+          <ul>
+            <li>Winnington House 2</li>
+            <li>Woodberry Grove, Finchley, London,
+
+              N12 0DR</li>
+            <li>United Kingdom</li>
+            <li>
+
+              + 31 648 070 043
+              
+              offices@alliancys.com
+              </li>
+          </ul>
         </div>
-        <div class="sub">
-            <p>Services</p>
-            <div class="other">
-                <ul>
-                    <li>Blueprints</li>
-                    <li>Solutions</li>
-                    <li>Consulting</li>
-                    <li>Training</li>
-                </ul>
-            </div>
+      </div>
+      <div class="sub">
+        <p>Services</p>
+        <div class="other">
+          <ul>
+            <li onclick="window.open('blueprinting.html')">Blueprints</li>
+            <li onclick="window.open('solutions.html')">Solutions</li>
+            <li onclick="window.open('consulting.html')">Consulting</li>
+            <li onclick="window.open('training.html')">Training</li>
+          </ul>
         </div>
-        <div class="sub">
-            <p>Legal</p>
-            <div class="other">
-                <ul>
-                    <li>Terms and conditions</li>
-                    <li>Cookie Statement</li>
-                    <li>Disclaimer</li>
-                    <li>Privacy</li>
-                </ul>
-            </div>
+      </div>
+      <div class="sub">
+        <p>Legal</p>
+        <div class="other">
+          <ul>
+            <li onclick="window.open('termsAndConditions.html')">Terms and conditions</li>
+            <li onclick="window.open('cookieStatement.html')">Cookie Statement</li>
+            <li onclick="window.open('Disclaimer.html')">Disclaimer</li>
+            <li onclick="window.open('Privacy.html')">Privacy</li>
+          </ul>
         </div>
+      </div>
     </div>
 
     <div class="copyright">
-        <p> © 2021 - Alliancys        </p>
+      <p>© 2021 - Alliancys</p>
     </div>
 
-    <script>
-        
-        $("#nm").click(function(){
-            $('.navbar-mobile').toggle( "flex" );
-        }); 
-
-        </script>
-
-<script>
-    $( "#this" ).click(function() {
-        $( "#men" ).slideToggle( "slow" );
-});
-</script>
-        
-    <script>
-        AOS.init();
-      </script>
-
-<script>
-    mybutton = document.getElementById("myBtn");
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction() {
-if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-mybutton.style.display = "flex";
-} else {
-mybutton.style.display = "none";
-}
-}
-
-function topFunction() {
-document.body.scrollTop = 0; // For Safari
-document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-} 
-</script>
-      
-    </body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
